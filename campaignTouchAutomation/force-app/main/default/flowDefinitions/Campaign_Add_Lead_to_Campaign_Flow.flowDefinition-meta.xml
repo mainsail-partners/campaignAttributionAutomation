@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionNumber>1</activeVersionNumber>
+    <description>Designed to be invoked by process builder passing in LeadID, CampaignID, and Status (optional) to create a CampaignMember record. If the lead is already a member then does nothing. If no Status is specified then flow looks up the default response status for that campaign.</description>
+    <masterLabel>Campaign: Add Lead to Campaign Flow</masterLabel>
+</FlowDefinition>
