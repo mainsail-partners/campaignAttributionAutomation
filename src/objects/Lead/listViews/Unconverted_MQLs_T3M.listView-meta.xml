@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unconverted_MQLs_T3M</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.PHONE</columns>
+    <columns>LEAD.EMAIL</columns>
+    <columns>First_Touch_Campaign__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>MQL_Date__c</columns>
+    <columns>Number_of_Attempts__c</columns>
+    <columns>Missed_SLA__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>MQL_Date__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH,LAST_MONTH,N_MONTHS_AGO:2</value>
+    </filters>
+    <filters>
+        <field>First_Touch_Campaign_Type__c</field>
+        <operation>notEqual</operation>
+        <value>Outbound</value>
+    </filters>
+    <filters>
+        <field>First_Touch_Campaign__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Disqualified</value>
+    </filters>
+    <label>Unconverted MQLs Trailing Three Months</label>
+</ListView>

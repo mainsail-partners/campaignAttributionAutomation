@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Confirmation_Required</fullName>
+    <active>true</active>
+    <description>AEs must check the box that they have added the product to the opportunity when they go to close the deal as won.</description>
+    <errorConditionFormula>AND (
+  OR (
+     ISPICKVAL(StageName, &quot;1 - Demo&quot;),
+     ISPICKVAL(StageName, &quot;2- Evaluation&quot;),
+     ISPICKVAL(StageName, &quot;3 - Negotiation&quot;),
+     ISPICKVAL(StageName, &quot;Closed Lost&quot;),
+     ISPICKVAL(StageName, &quot;Closed Won&quot;)),
+Products_Added__c = FALSE,
+$RecordType.Id = &quot;012f4000000B1t5&quot;
+)</errorConditionFormula>
+    <errorDisplayField>Products_Added__c</errorDisplayField>
+    <errorMessage>Once the opp is ready to be accepted and moved to 1-Demo status and beyond, if you have not checked the box that you have added the products, you must do so. If you forgot to add the products DO THIS NOW.</errorMessage>
+</ValidationRule>

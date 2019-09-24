@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Handoff_Call_Date_Time_Required</fullName>
+    <active>true</active>
+    <description>An Opportunity cannot be closed won without a date and time selected for the handoff call.</description>
+    <errorConditionFormula>AND( 
+ISCHANGED( StageName ), 
+ISPICKVAL(StageName, &quot;Closed Won&quot;), 
+$RecordType.Id = &quot;012f4000000B1t5&quot;, 
+ISBLANK(TEXT( Handoff_Call_Date_Time__c ))
+)</errorConditionFormula>
+    <errorDisplayField>Handoff_Call_Date_Time__c</errorDisplayField>
+    <errorMessage>An Opportunity cannot be closed won without a date and time selected for the handoff call.</errorMessage>
+</ValidationRule>

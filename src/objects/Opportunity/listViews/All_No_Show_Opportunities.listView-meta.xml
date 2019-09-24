@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_No_Show_Opportunities</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Credited_BDR__c</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>Meeting_Date__c</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>Rejection_Reason__c</columns>
+    <columns>Rejection_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.STAGE_NAME</field>
+        <operation>equals</operation>
+        <value>Closed No Oppty</value>
+    </filters>
+    <filters>
+        <field>Rejection_Reason__c</field>
+        <operation>equals</operation>
+        <value>No Show</value>
+    </filters>
+    <filters>
+        <field>CORE.USERS.FIRST_NAME</field>
+        <operation>equals</operation>
+        <value>Justin</value>
+    </filters>
+    <filters>
+        <field>OPPORTUNITY.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Opportunity.BDR_Pre_Opportunity</value>
+    </filters>
+    <label>All No Show Opportunities</label>
+</ListView>

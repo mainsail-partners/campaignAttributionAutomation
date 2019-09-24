@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Target__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(MONTH( MQL_Date__c ),
+1, 134,
+2, 97,
+3, 74, 
+4, 82, 
+5, 89, 
+6, 112,
+7, 149,
+8, 179,
+9, 208,
+10, 223,
+11, 0,
+12, 0,
+0)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Target</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

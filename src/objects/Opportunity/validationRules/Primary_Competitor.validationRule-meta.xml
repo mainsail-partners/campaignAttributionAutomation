@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_Competitor</fullName>
+    <active>false</active>
+    <description>If an opportunity is marked as &quot;Closed Lost / Competitor&quot; it must have a primary competitor.</description>
+    <errorConditionFormula>ISPICKVAL( Lost_Reason__c, &quot;Lost to Competitor&quot;)&amp;&amp; ISBLANK(  Primary_Competitor__c)</errorConditionFormula>
+    <errorDisplayField>Primary_Competitor__c</errorDisplayField>
+    <errorMessage>If an opportunity is marked as &quot;Closed Lost / Competitor&quot; it must have a primary competitor.</errorMessage>
+</ValidationRule>

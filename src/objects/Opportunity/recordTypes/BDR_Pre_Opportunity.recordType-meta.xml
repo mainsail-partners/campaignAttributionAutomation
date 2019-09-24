@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BDR_Pre_Opportunity</fullName>
+    <active>true</active>
+    <businessProcess>Pre-Opportunity</businessProcess>
+    <description>PestRoutes BDR to AE Hand-off</description>
+    <label>PestRoutes BDR Pre-Opportunity</label>
+    <picklistValues>
+        <picklist>Budget_Money__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Current_Software__c</picklist>
+        <values>
+            <fullName>A%26K Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Briostack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fieldworks HQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gorilladesk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HouseCallPro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PestPac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PestRoutes</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pocomos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quickbooks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDF Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RealGreen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ServSuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Auto Pilot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ServicePro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SmartService</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WorkWave</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Free_Period_Approved__c</picklist>
+        <values>
+            <fullName>1 Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>N%2FA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Giveaway_Reason__c</picklist>
+        <values>
+            <fullName>Close a PestRoutes Sales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Good Candidate for Future Upsells</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintain an Existing PestRoutes Relationship</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Historical_Record_Type__c</picklist>
+        <values>
+            <fullName>Client Retention Proposal Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Campaign Proposal Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Generic Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Project Quote Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEM Proposal Process</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subscription Proposal Process</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Job_Function__c</picklist>
+        <values>
+            <fullName>IT Staff</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Office Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Owner %2F Operator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Technician</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vice President %2F COO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Capterra</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D%26B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drift</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Phone Call</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>InfoUSA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lobster Inbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospected</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TMI Database</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZoomInfo</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lost_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Member_Type__c</picklist>
+        <values>
+            <fullName>Advanced Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Basic Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Business Member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Non-member</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Premium Member</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Merchant_Account__c</picklist>
+        <values>
+            <fullName>Braintree</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iroquois</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Merchant Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To Be Determined</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Worldpay</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Primary_Competitor_List__c</picklist>
+        <values>
+            <fullName>A%26K Systems</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Briostack</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Custom Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fieldworks HQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gorilladesk</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HouseCallPro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PestPac</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pocomos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Quickbooks</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RDF Software</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RealGreen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPCS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ServSuite</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service Auto Pilot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ServicePro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SmartService</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WorkWave</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Project_Type__c</picklist>
+        <values>
+            <fullName>Basic Print Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Current Client Website Redesign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email Design Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Landing Page Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Logo Design Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Site Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other Project</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tradeshow Display Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vehicle Wrap Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Video Project</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason_for_choosing_Lobster__c</picklist>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pest Control Expertise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Services</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Site Integrations</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Rejection_Reason__c</picklist>
+        <values>
+            <fullName>Authority</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Budget</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Need</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Poor Qualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Timeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Cross-Sell</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Renewal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upsell</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Free_Email_Domain__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+Contains(Email, &quot;gmail&quot;)|| 
+Contains(Email, &quot;yahoo&quot;)|| 
+Contains (Email, &quot;hotmail&quot;)|| 
+Contains (Email, &quot;aol&quot;) || 
+Contains (Email, &quot;comcast&quot;) || 
+Contains (Email, &quot;bellsouth&quot;) || 
+Contains (Email, &quot;verizon&quot;) || 
+Contains (Email, &quot;msn&quot;) || 
+Contains (Email, &quot;rollins&quot;) || 
+Contains (Email, &quot;att&quot;) || 
+Contains (Email, &quot;cox&quot;) || 
+Contains (Email, &quot;scbglobal&quot;) || 
+Contains (Email, &quot;earthlink&quot;) || 
+Contains (Email, &quot;icloud&quot;) || 
+Contains (Email, &quot;optonline&quot;) || 
+Contains (Email, &quot;ymail&quot;) || 
+Contains (Email, &quot;charter&quot;) || 
+Contains (Email, &quot;outlook&quot;), 
+TRUE,FALSE
+)</formula>
+    <label>Free Email Domain</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

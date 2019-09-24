@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Rejection_Notes_No_Oppty</fullName>
+    <active>true</active>
+    <description>If an opportunity is marked &quot;Closed No Oppty&quot; it must have a rejection reason detail.</description>
+    <errorConditionFormula>ISPICKVAL(StageName, &quot;Closed No Oppty&quot;)&amp;&amp; ISBLANK( Rejection_Notes__c)</errorConditionFormula>
+    <errorDisplayField>Rejection_Notes__c</errorDisplayField>
+    <errorMessage>If an opportunity is marked &quot;Closed No Oppty&quot; it must have a rejection reason detail.</errorMessage>
+</ValidationRule>

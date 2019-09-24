@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PW18_Unconverted_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>Number_of_Attempts__c</columns>
+    <columns>Last_Attempt_Date__c</columns>
+    <columns>Last_Connect_Date__c</columns>
+    <columns>Most_Recent_Cadence_Next_Due_Date__c</columns>
+    <columns>Most_Recent_Cadence_Name_SalesLoft__c</columns>
+    <columns>Time_Zone__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>PestWorld 2018 - Unconverted Leads</label>
+</ListView>

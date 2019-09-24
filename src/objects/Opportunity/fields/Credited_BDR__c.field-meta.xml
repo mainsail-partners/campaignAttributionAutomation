@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Credited_BDR__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>BDR who scheduled the demo and converted the lead to an opportunity</inlineHelpText>
+    <label>Credited BDR</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Value does not exist or the user you are selecting is not a BDR.</errorMessage>
+        <filterItems>
+            <field>User.UserRoleId</field>
+            <operation>equals</operation>
+            <value>00Ef4000000LsOf</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Opportunities</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Current_Software__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>What software is the company currently using if any?</inlineHelpText>
+    <label>Current Software</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A&amp;K Systems</fullName>
+                <default>false</default>
+                <label>A&amp;K Systems</label>
+            </value>
+            <value>
+                <fullName>Briostack</fullName>
+                <default>false</default>
+                <label>Briostack</label>
+            </value>
+            <value>
+                <fullName>Custom</fullName>
+                <default>false</default>
+                <label>Custom</label>
+            </value>
+            <value>
+                <fullName>Fieldworks HQ</fullName>
+                <default>false</default>
+                <label>Fieldworks HQ</label>
+            </value>
+            <value>
+                <fullName>Gorilladesk</fullName>
+                <default>false</default>
+                <label>Gorilladesk</label>
+            </value>
+            <value>
+                <fullName>HouseCallPro</fullName>
+                <default>false</default>
+                <label>HouseCallPro</label>
+            </value>
+            <value>
+                <fullName>PestPac</fullName>
+                <default>false</default>
+                <label>PestPac</label>
+            </value>
+            <value>
+                <fullName>PestRoutes</fullName>
+                <default>false</default>
+                <label>PestRoutes</label>
+            </value>
+            <value>
+                <fullName>Pocomos</fullName>
+                <default>false</default>
+                <label>Pocomos</label>
+            </value>
+            <value>
+                <fullName>Quickbooks</fullName>
+                <default>false</default>
+                <label>Quickbooks</label>
+            </value>
+            <value>
+                <fullName>RDF Software</fullName>
+                <default>false</default>
+                <label>RDF Software</label>
+            </value>
+            <value>
+                <fullName>RealGreen</fullName>
+                <default>false</default>
+                <label>RealGreen</label>
+            </value>
+            <value>
+                <fullName>Service Auto Pilot</fullName>
+                <default>false</default>
+                <label>Service Auto Pilot</label>
+            </value>
+            <value>
+                <fullName>ServicePro</fullName>
+                <default>false</default>
+                <label>ServicePro</label>
+            </value>
+            <value>
+                <fullName>ServSuite</fullName>
+                <default>false</default>
+                <label>ServSuite</label>
+            </value>
+            <value>
+                <fullName>SmartService</fullName>
+                <default>false</default>
+                <label>SmartService</label>
+            </value>
+            <value>
+                <fullName>SPCS</fullName>
+                <default>false</default>
+                <label>SPCS</label>
+            </value>
+            <value>
+                <fullName>WorkWave</fullName>
+                <default>false</default>
+                <label>WorkWave</label>
+            </value>
+            <value>
+                <fullName>None</fullName>
+                <default>false</default>
+                <label>None</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

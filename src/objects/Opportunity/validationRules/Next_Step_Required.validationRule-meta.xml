@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Step_Required</fullName>
+    <active>true</active>
+    <description>A next step is required for all stages except Closed Won on PestRoutes Sales opps</description>
+    <errorConditionFormula>AND(
+$RecordType.Id = &quot;012f4000000B1t5&quot;,
+OR( 
+ISPICKVAL(StageName, &quot;2- Evaluation&quot;),
+     ISPICKVAL(StageName, &quot;3 - Negotiation&quot;),
+     ISPICKVAL(StageName, &quot;Closed Lost&quot;),
+     ISPICKVAL(StageName, &quot;Closed No Oppty&quot;)),
+ISBLANK( NextStep )
+)</errorConditionFormula>
+    <errorMessage>You must have an entry in the &#39;Next Step&#39; field in order to move to the next stage.</errorMessage>
+</ValidationRule>

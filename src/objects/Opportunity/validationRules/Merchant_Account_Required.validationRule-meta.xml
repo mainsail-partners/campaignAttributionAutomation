@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Merchant_Account_Required</fullName>
+    <active>true</active>
+    <description>Opportunity cannot be closed won unless an option for Merchant Account is selected.</description>
+    <errorConditionFormula>AND( 
+ISCHANGED( StageName ), 
+ISPICKVAL(StageName, &quot;Closed Won&quot;), 
+$RecordType.Id = &quot;012f4000000B1t5&quot;, 
+ISBLANK(TEXT( Merchant_Account__c ))
+)</errorConditionFormula>
+    <errorMessage>Opportunity cannot be closed won unless an option for Merchant Account is selected.</errorMessage>
+</ValidationRule>
