@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Reason_for_Nurture</fullName>
-    <active>true</active>
-    <description>If a lead is marked as nurture it must have a reason.</description>
-    <errorConditionFormula>ISPICKVAL( Status , &quot;Nurture&quot;)&amp;&amp; ISPICKVAL( Nurture_Reason__c , &quot;&quot;)</errorConditionFormula>
-    <errorDisplayField>Nurture_Reason__c</errorDisplayField>
-    <errorMessage>If a lead is marked as nurture it must have a reason.</errorMessage>
-</ValidationRule>

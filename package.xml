@@ -3,15 +3,9 @@
   <types>
     <members>Campaign.Acquisition_Cost__c</members>
     <members>Campaign.Actual_Cost_in_Campaign__c</members>
+    <members>Campaign.Actual_Cost_in_Campaign__c</members>
     <members>Campaign.Landing_Page_URL__c</members>
-    <members>CampaignMember.Count__c</members>
-    <members>CampaignMember.Member_Count__c</members>
     <members>Campaign.Members__c</members>
-    <members>CampaignMember.utm_campaign__c</members>
-    <members>CampaignMember.utm_content__c</members>
-    <members>CampaignMember.utm_medium__c</members>
-    <members>CampaignMember.utm_source__c</members>
-    <members>CampaignMember.utm_term__c</members>
     <members>Campaign.MRR_of_Opportunities_in_Campaign__c</members>
     <members>Campaign.MRR_of_Won_Opportunities_in_Campaign__c</members>
     <members>Campaign.Opportunity_Win_Rate__c</members>
@@ -19,42 +13,20 @@
     <members>Campaign.Response_to_Win_Conversion_Rate__c</members>
     <members>Campaign.ROAS__c</members>
     <members>Campaign.Spend_Pipeline_Ratio__c</members>
+    <members>Campaign.Variance_to_Budget__c</members>
     <members>Contact.Campaign_Count__c</members>
     <members>Contact.cid__c</members>
     <members>Contact.First_Touch_Campaign__c</members>
     <members>Contact.Last_Touch_Campaign__c</members>
-    <members>Contact.utm_campaign__c</members>
-    <members>Contact.utm_content__c</members>
-    <members>Contact.utm_medium__c</members>
-    <members>Contact.utm_source__c</members>
-    <members>Contact.utm_term__c</members>
     <members>Lead.Campaign_Count__c</members>
     <members>Lead.cid__c</members>
     <members>Lead.First_Touch_Campaign__c</members>
     <members>Lead.First_Touch_Campaign_Type__c</members>
     <members>Lead.Last_Touch_Campaign__c</members>
-    <members>Lead.utm_campaign__c</members>
-    <members>Lead.utm_content__c</members>
-    <members>Lead.utm_medium__c</members>
-    <members>Lead.utm_source__c</members>
-    <members>Lead.utm_term__c</members>
     <members>Opportunity.Campaign_Type__c</members>
-    <members>Opportunity.First_Expected_Invoice_Date__c</members>
     <members>Opportunity.First_Touch_Campaign__c</members>
     <members>Opportunity.Last_Touch_Campaign__c</members>
-    <members>Opportunity.utm_campaign__c</members>
-    <members>Opportunity.utm_content__c</members>
-    <members>Opportunity.utm_medium__c</members>
-    <members>Opportunity.utm_source__c</members>
-    <members>Opportunity.utm_term__c</members>
     <name>CustomField</name>
-  </types>
-  <types>
-    <members>Campaign</members>
-    <members>Contact</members>
-    <members>Lead</members>
-    <members>Opportunity</members>
-    <name>CustomObject</name>
   </types>
   <types>
     <members>Campaign_Add_Contact_to_Campaign_Flow</members>

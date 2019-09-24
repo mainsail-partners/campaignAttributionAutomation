@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Campaign_Count__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Campaign Count</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>cid__c</fullName>
+        <description>Salesforce campaign ID. This field is used to dynamically assign contacts to the correct Salesforce campaign based on a UTM value in the URL that is captured by HubSpot and passed to this field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Salesforce campaign ID</inlineHelpText>
+        <label>Campaign ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>First_Touch_Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>First Touch Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>First Touch Leads</relationshipLabel>
+        <relationshipName>First_Touch_Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>First_Touch_Campaign_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(First_Touch_Campaign__r.Type)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>First Touch Campaign Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Touch_Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Last Touch Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Leads (Last Touch Campaign)</relationshipLabel>
+        <relationshipName>Leads1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+</CustomObject>
