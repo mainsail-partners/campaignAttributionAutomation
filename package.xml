@@ -21,13 +21,13 @@
         <name>CustomField</name>
     </types>
     <types>
-        <members>Campaign_Add_Contact_to_Campaign_Flow.flowDefinition-meta.xml</members>
-        <members>Campaign_Add_Lead_to_Campaign_Flow.flowDefinition-meta.xml</members>
-        <members>Campaign_Member_Count.flowDefinition-meta.xml</members>
-        <members>Campaign_Set_First_Touch_Campaign.flowDefinition-meta.xml</members>
-        <members>Campaign_Set_Last_Touch_Campaign.flowDefinition-meta.xml</members>
-        <members>Contact_Add_Contact_to_Campaign.flowDefinition-meta.xml</members>
-        <members>Lead_Add_Lead_to_Campaign.flowDefinition-meta.xml</members>
+        <members>Campaign_Add_Contact_to_Campaign_Flow.flow-meta.xml</members>
+        <members>Campaign_Add_Lead_to_Campaign_Flow.flow-meta.xml</members>
+        <members>Campaign_Member_Count.flow-meta.xml</members>
+        <members>Campaign_Set_First_Touch_Campaign.flow-meta.xml</members>
+        <members>Campaign_Set_Last_Touch_Campaign.flow-meta.xml</members>
+        <members>Contact_Add_Contact_to_Campaign.flow-meta.xml</members>
+        <members>Lead_Add_Lead_to_Campaign.flow-meta.xml</members>
         <name>Flow</name>
     </types>
     <types>
