@@ -18,6 +18,7 @@
     <members>Lead.Last_Touch_Campaign__c</members>
     <members>Opportunity.First_Touch_Campaign__c</members>
     <members>Opportunity.Last_Touch_Campaign__c</members>
+    <members>Opportunity.Primary_Contact__c</members>
     <name>CustomField</name>
   </types>
   <types>
