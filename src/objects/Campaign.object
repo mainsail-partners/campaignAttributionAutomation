@@ -1,32 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <fullName>Acquisition_Cost__c</fullName>
-        <description>Unloaded marketing CAC, does not include overhead.</description>
-        <externalId>false</externalId>
-        <formula>IF( NumberOfWonOpportunities = 0, NULL , 
-        (Actual_Cost_in_Campaign__c /  NumberOfWonOpportunities))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Unloaded marketing CAC, does not include overhead.</inlineHelpText>
-        <label>Acquisition Cost</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Cost_per_Response__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( NumberOfResponses = 0, NULL , 
-        (Actual_Cost_in_Campaign__c / Members__c))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Cost per Response</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Landing_Page_URL__c</fullName>
         <externalId>false</externalId>
         <label>Landing Page URL</label>
@@ -56,87 +30,6 @@
         <description>Replaces default field with the same name, but uses opportunity MRR instead of Amount. Populated by Apex.</description>
         <externalId>false</externalId>
         <label>MRR of Won Opportunities in Campaign</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Opportunity_Win_Rate__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( NumberOfOpportunities = 0, NULL , 
-    ((NumberOfWonOpportunities / NumberOfOpportunities)))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Opportunity Win Rate</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Response_to_Opp_Conversion_Rate__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( NumberOfResponses = 0, NULL , 
-    ((NumberOfOpportunities / Members__c)))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Response to Opp Conv. Rate</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Response_to_Win_Conversion_Rate__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( NumberOfResponses = 0, NULL , 
-    ((NumberOfWonOpportunities /  Members__c)))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Response to Win Conv. Rate</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>ROAS__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF( Actual_Cost_in_Campaign__c = 0, NULL ,
-    (( (MRR_of_Won_Opportunities_in_Campaign__c*12) -  Actual_Cost_in_Campaign__c ) /  Actual_Cost_in_Campaign__c))</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>The Return on Ad Spend (ROAS) on first-year ARR.</inlineHelpText>
-        <label>ROAS</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <type>Percent</type>
-    </fields>
-    <fields>
-        <fullName>Spend_Pipeline_Ratio__c</fullName>
-        <externalId>false</externalId>
-        <formula>IF(Actual_Cost_in_Campaign__c = 0,
-
-        0,
-
-        ( (AmountAllOpportunities*12) /  Actual_Cost_in_Campaign__c)
-
-    )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>The pipeline value is the annualized opportunity amount. 
-
-    The industry benchmark of spend:pipeline is 10:1</inlineHelpText>
-        <label>Spend:Pipeline Ratio</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>1</scale>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Variance_to_Budget__c</fullName>
-        <externalId>false</externalId>
-        <formula>BudgetedCost -  Actual_Cost_in_Campaign__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Variance to Budget</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
