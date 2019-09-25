@@ -2,9 +2,8 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
   <types>
     <members>Campaign.Acquisition_Cost__c</members>
-    <members>Campaign.Actual_Cost_in_Campaign__c</members>
-    <members>Campaign.Actual_Cost_in_Campaign__c</members>
     <members>Campaign.Landing_Page_URL__c</members>
+    <members>Campaign.Cost_per_Response__c</members>
     <members>Campaign.Members__c</members>
     <members>Campaign.MRR_of_Opportunities_in_Campaign__c</members>
     <members>Campaign.MRR_of_Won_Opportunities_in_Campaign__c</members>
@@ -14,6 +13,7 @@
     <members>Campaign.ROAS__c</members>
     <members>Campaign.Spend_Pipeline_Ratio__c</members>
     <members>Campaign.Variance_to_Budget__c</members>
+    <members>CampaignMembers.Count__c</members>
     <members>Contact.Campaign_Count__c</members>
     <members>Contact.cid__c</members>
     <members>Contact.First_Touch_Campaign__c</members>
