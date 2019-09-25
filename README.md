@@ -64,6 +64,9 @@ Make sure that when you create an outbound changeset it contains the following r
 --Lead: Add Lead to Campaign<br>
 --OPPORT Assign First Last Touch Campaign<br>
 
+-PermissionSets<br>
+--Campaign Attribution Permissions
+
 ## Note on Field Permissions
 
-We are unable to update field permissions for all custom profiles through this deployment. If you need to update profiles this can be done by going to the individual fields and granting access to profiles that need access.
+We are unable to update field permissions for all custom profiles through this deployment. If you need to update profiles this can be done by applying the <b>Campaign Attribution Permissions</b> Permission Set to the specific users or roles.
