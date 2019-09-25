@@ -1,6 +1,6 @@
 ## Campaign Attribution First Touch and Last Touch Tagging
 
-Objects Referrenced
+Objects Referrenced<br>
 -Contact<br>
 -Lead<br>
 -Opportunity<br>
@@ -11,7 +11,7 @@ Objects Referrenced
 
 Contains custom fields and automation needed to implement first touch and last touch campaign influence within Salesforce. This tool leverages the campaigns object to attribute first and last touch campaigns to opportunities. It does this by looking at leads and contacts at both the time of opportunity creation and when campaign member records are updated.
 
-Note that the Add Lead and Add Contact automation are from a forked project from @douglascayers <a href="https://github.com/mainsail-partners/sfdc-add-lead-to-campaign-flow">sfdc-add-lead-to-campaign-flow</a>
+Note that the Add Lead and Add Contact automation are from a forked project from Douglas Ayers. <a href="https://github.com/mainsail-partners/sfdc-add-lead-to-campaign-flow">sfdc-add-lead-to-campaign-flow</a>
 
 ## Process for Deploying
 
@@ -64,6 +64,6 @@ Make sure that when you create an outbound changeset it contains the following r
 --Lead: Add Lead to Campaign<br>
 --OPPORT Assign First Last Touch Campaign<br>
 
-## Note on field permissions
+## Note on Field Permissions
 
 We are unable to update field permissions for all custom profiles through this deployment. If you need to update profiles this can be done by going to the individual fields and granting access to profiles that need access.
