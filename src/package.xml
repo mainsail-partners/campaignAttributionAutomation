@@ -43,5 +43,9 @@
     <members>OPPORT_Assign_First_Last_Touch_Campaign_Attribution</members>
     <name>FlowDefinition</name>
   </types>
+  <types>
+    <members>Campaign_Attribution_Permissions</members>
+    <name>PermissionSet</name>
+  </types>
   <version>45.0</version>
 </Package>
