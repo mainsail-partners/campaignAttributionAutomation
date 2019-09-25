@@ -86,7 +86,7 @@
         <type>Percent</type>
     </fields>
     <fields>
-        fullName>Response_to_Opp_Conversion_Rate__c</fullName>
+        <fullName>Response_to_Opp_Conversion_Rate__c</fullName>
         <externalId>false</externalId>
         <formula>IF( NumberOfResponses = 0, NULL , 
     ((NumberOfOpportunities / Members__c)))</formula>
