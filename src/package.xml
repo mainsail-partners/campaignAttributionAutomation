@@ -13,7 +13,7 @@
     <members>Campaign.ROAS__c</members>
     <members>Campaign.Spend_Pipeline_Ratio__c</members>
     <members>Campaign.Variance_to_Budget__c</members>
-    <members>CampaignMembers.Count__c</members>
+    <members>CampaignMember.Count__c</members>
     <members>Contact.Campaign_Count__c</members>
     <members>Contact.cid__c</members>
     <members>Contact.First_Touch_Campaign__c</members>
