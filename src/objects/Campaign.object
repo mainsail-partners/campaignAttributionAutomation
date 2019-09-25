@@ -15,18 +15,6 @@
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>Actual_Cost_in_Campaign__c</fullName>
-        <externalId>false</externalId>
-        <formula>January__c +  February__c +  March__c +  April__c +  May__c +  June__c +  July__c +  August__c +  September__c +  October__c +  November__c +  December__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Sum of monthly campaign spend.</inlineHelpText>
-        <label>Actual Cost in Campaign</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <type>Currency</type>
-    </fields>
-    <fields>
         <fullName>Cost_per_Response__c</fullName>
         <externalId>false</externalId>
         <formula>IF( NumberOfResponses = 0, NULL , 
