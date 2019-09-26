@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <userlicense>Salesforce</userlicense>
-    <description>Gives users access to First and Last touch campaign fields on multiple objects</description>
+    <description>Grants test access for all campaign count</description>
+    <label>PermissionTest</label>
+    <userLicense>Salesforce</userLicense>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Campaign.Landing_Page_URL__c</field>
+        <field>Contact.Campaign_Count__c</field>
         <readable>true</readable>
     </fieldPermissions>
 </PermissionSet>
+        
