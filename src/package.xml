@@ -44,7 +44,7 @@
   </types>
   <types>
     <members>Campaign_Attribution_Permissions</members>
-    <name>PermissionSet</name>
+    <name>permissionset</name>
   </types>
   <version>45.0</version>
 </Package>
