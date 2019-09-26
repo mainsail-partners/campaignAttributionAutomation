@@ -104,22 +104,38 @@
             </value>
         </inputParameters>
     </actionCalls>
-    <assignments>
-        <name>myVariable_waitStartTimeAssignment</name>
-        <label>myVariable_waitStartTimeAssignment</label>
+    <decisions>
+        <name>isChangedDecision2_myRule_1_cid_c</name>
+        <label>isChangedDecision2_myRule_1_cid_c</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
-        <assignmentItems>
-            <assignToReference>myVariable_waitStartTimeVariable</assignToReference>
-            <operator>Assign</operator>
-            <value>
-                <elementReference>$Flow.CurrentDateTime</elementReference>
-            </value>
-        </assignmentItems>
-        <connector>
+        <defaultConnector>
             <targetReference>myDecision</targetReference>
-        </connector>
-    </assignments>
+        </defaultConnector>
+        <defaultConnectorLabel>default</defaultConnectorLabel>
+        <rules>
+            <name>isChangedRule_2_myRule_1_cid_c</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>myVariable_old</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>myVariable_old.cid__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>myVariable_current.cid__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>myDecision</targetReference>
+            </connector>
+            <label>isChangedRule_2_myRule_1_cid_c</label>
+        </rules>
+    </decisions>
     <decisions>
         <processMetadataValues>
             <name>index</name>
@@ -136,7 +152,31 @@
             <name>myRule_1</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>formula_myRule_1</leftValueReference>
+                <processMetadataValues>
+                    <name>inputDataType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>leftHandSideType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>operatorDataType</name>
+                    <value>
+                        <stringValue>String</stringValue>
+                    </value>
+                </processMetadataValues>
+                <processMetadataValues>
+                    <name>rightHandSideType</name>
+                    <value>
+                        <stringValue>Boolean</stringValue>
+                    </value>
+                </processMetadataValues>
+                <leftValueReference>isChangedRule_2_myRule_1_cid_c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -149,30 +189,7 @@
         </rules>
     </decisions>
     <description>Adds lead to campaign whenever its CID (campaign id) custom field value changes.</description>
-    <formulas>
-        <processMetadataValues>
-            <name>originalFormula</name>
-            <value>
-                <stringValue>AND(
-  OR(
-    ISNEW(),
-    ISCHANGED( [Lead].cid__c )
-  ),
-  NOT( ISBLANK( [Lead].cid__c ) )
-) </stringValue>
-            </value>
-        </processMetadataValues>
-        <name>formula_myRule_1</name>
-        <dataType>Boolean</dataType>
-        <expression>AND(
-  OR(
-    ISNEW(),
-    ISCHANGED( {!myVariable_current.cid__c} )
-  ),
-  NOT( ISBLANK( {!myVariable_current.cid__c} ) )
-)</expression>
-    </formulas>
-    <interviewLabel>Lead_Add_Lead_to_Campaign-1_InterviewLabel</interviewLabel>
+    <interviewLabel>Lead_Add_Lead_to_Campaign-2_InterviewLabel</interviewLabel>
     <label>Lead: Add Lead to Campaign</label>
     <processMetadataValues>
         <name>ObjectType</name>
@@ -199,7 +216,7 @@
         </value>
     </processMetadataValues>
     <processType>Workflow</processType>
-    <startElementReference>myVariable_waitStartTimeAssignment</startElementReference>
+    <startElementReference>isChangedDecision2_myRule_1_cid_c</startElementReference>
     <status>Active</status>
     <variables>
         <name>myVariable_current</name>
@@ -216,15 +233,5 @@
         <isInput>true</isInput>
         <isOutput>false</isOutput>
         <objectType>Lead</objectType>
-    </variables>
-    <variables>
-        <name>myVariable_waitStartTimeVariable</name>
-        <dataType>DateTime</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <value>
-            <elementReference>$Flow.CurrentDateTime</elementReference>
-        </value>
     </variables>
 </Flow>
