@@ -43,7 +43,7 @@
     <name>FlowDefinition</name>
   </types>
   <types>
-    <members>PermissionTest</members>
+    <members>*</members>
     <name>PermissionSet</name>
   </types>
   <version>45.0</version>
