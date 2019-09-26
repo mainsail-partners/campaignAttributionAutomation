@@ -30,6 +30,7 @@
     <members>Contact_Add_Contact_to_Campaign</members>
     <members>Lead_Add_Lead_to_Campaign</members>
     <members>OPPORT_Assign_First_Last_Touch_Campaign_Attribution</members>
+    <members>OPPORT_Assign_Primary_Contact</members>
     <name>Flow</name>
   </types>
   <types>
@@ -42,6 +43,7 @@
     <members>Contact_Add_Contact_to_Campaign</members>
     <members>Lead_Add_Lead_to_Campaign</members>
     <members>OPPORT_Assign_First_Last_Touch_Campaign_Attribution</members>
+    <members>OPPORT_Assign_Primary_Contact</members>
     <name>FlowDefinition</name>
   </types>
   <types>
