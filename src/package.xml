@@ -43,7 +43,7 @@
     <name>FlowDefinition</name>
   </types>
   <types>
-    <members>Campaign_Attribution_Permissions</members>
+    <members>PermissionTest</members>
     <name>PermissionSet</name>
   </types>
   <version>45.0</version>
