@@ -21,6 +21,7 @@
     <name>CustomField</name>
   </types>
   <types>
+    <members>Assign_Primary_Contact_to_Opportunity</members>
     <members>Campaign_Add_Contact_to_Campaign_Flow</members>
     <members>Campaign_Add_Lead_to_Campaign_Flow</members>
     <members>Campaign_Member_Count</members>
@@ -32,6 +33,7 @@
     <name>Flow</name>
   </types>
   <types>
+    <members>Assign_Primary_Contact_to_Opportunity</members>
     <members>Campaign_Add_Contact_to_Campaign_Flow</members>
     <members>Campaign_Add_Lead_to_Campaign_Flow</members>
     <members>Campaign_Member_Count</members>
