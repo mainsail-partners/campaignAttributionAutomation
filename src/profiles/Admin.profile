@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+<Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <label>Campaign Attribution Permissions</label>
     <userlicense>Salesforce</userlicense>
     <description>Gives users access to First and Last touch campaign fields on multiple objects</description>
@@ -30,6 +30,10 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Campaign.Count__c</field>
+        <readable>true</readable>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.Campaign_Count__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -38,11 +42,6 @@
         <field>Contact.cid__c</field>
         <readable>true</readable>
     </fieldPermissions>
-        <fieldPermissions>
-        <editable>true</editable>
-        <field>Campaign.Count__c</field>
-        <readable>true</readable>
-    <fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Contact.First_Touch_Campaign__c</field>
@@ -93,4 +92,4 @@
         <field>Opportunity.Primary_Contact__c</field>
         <readable>true</readable>
     </fieldPermissions>
-</PermissionSet>
+</Profile>
