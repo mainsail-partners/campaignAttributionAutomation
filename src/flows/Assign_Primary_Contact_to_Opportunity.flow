@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Designed to populate the Primary Contact lookup field on the opportunity that is subsequently used to assign the First and Last Touch campaign values when an opportunity was created from a contact record.</descriptions>
+    <description>Designed to populate the Primary Contact lookup field on the opportunity that is subsequently used to assign the First and Last Touch campaign values when an opportunity was created from a contact record.</description>
     <decisions>
         <name>campaign_fields_not_blank</name>
         <label>campaign fields not blank</label>
