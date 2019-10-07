@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Campaign Attribution Permissions</label>
-    <userlicense>Salesforce</userlicense>
-    <description>Gives users access to First and Last touch campaign fields on multiple objects</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Campaign.Landing_Page_URL__c</field>
