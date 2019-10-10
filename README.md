@@ -34,8 +34,6 @@ Make sure that when you create an outbound changeset it contains the following r
 --Campaign<br>
 ---Landing Page URL<br>
 ---Members<br>
----MMR of Opportunities in Campaign<br>
----MRR of Won Opportunities in Campaign<br>
 --Campaign Member<br>
 ---Count<br>
 --Contact<br>
