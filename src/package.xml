@@ -3,8 +3,6 @@
   <types>
     <members>Campaign.Landing_Page_URL__c</members>
     <members>Campaign.Members__c</members>
-    <members>Campaign.MRR_of_Opportunities_in_Campaign__c</members>
-    <members>Campaign.MRR_of_Won_Opportunities_in_Campaign__c</members>
     <members>CampaignMember.Count__c</members>
     <members>Contact.Campaign_Count__c</members>
     <members>Contact.cid__c</members>
